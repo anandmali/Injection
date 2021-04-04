@@ -1,8 +1,10 @@
 package com.anandm.injection.network
 
-class GithubManager {
+import com.anandm.injection.di.ActivityScoped
+import javax.inject.Inject
 
-    fun some() = "Something"
-
-
+@ActivityScoped
+class GithubManager
+@Inject constructor() {
+    fun someThing() = "Service returned"
 }

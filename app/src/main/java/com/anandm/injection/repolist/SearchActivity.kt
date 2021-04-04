@@ -8,16 +8,20 @@ import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
 
 @ActivityScoped
-class MainActivity : DaggerAppCompatActivity(), RepoContract.View {
+class SearchActivity : DaggerAppCompatActivity(), SearchContract.View {
 
     @Inject
-    lateinit var repoPresenterImpl: RepoPresenterImpl
+    lateinit var searchPresenterImpl: SearchPresenterImpl
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        textView.text = repoPresenterImpl.something()
+        searchPresenterImpl.fetchValue()
+    }
+
+    override fun showMessage(message: String) {
+        textView.text = message
     }
 }

@@ -3,16 +3,12 @@ package com.anandm.injection.repolist
 import com.anandm.injection.mvp.BasePresenter
 import com.anandm.injection.mvp.BaseView
 
-interface RepoContract {
+interface SearchContract {
 
     interface View : BaseView {
-
+        fun showMessage(message: String)
     }
 
-    interface Presenter: BasePresenter<View> {
-
-        fun something(): String
-
-    }
+    interface Presenter : BasePresenter<View>
 
 }
