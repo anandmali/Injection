@@ -13,6 +13,8 @@ import javax.inject.Singleton
 @Module
 class NetworkModule {
 
+    private fun getBaseUrl() = "https://api.github.com/"
+
     @Singleton
     @Provides
     fun provideOkHttpClient() = if (BuildConfig.DEBUG) {
@@ -30,9 +32,9 @@ class NetworkModule {
 
     @Singleton
     @Provides
-    fun provideRetrofit(okHttpClient: OkHttpClient, BASE_URL: String): Retrofit = Retrofit.Builder()
+    fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit = Retrofit.Builder()
         .addConverterFactory(GsonConverterFactory.create())
-        .baseUrl(BASE_URL)
+        .baseUrl(getBaseUrl())
         .client(okHttpClient)
         .build()
 
@@ -40,7 +42,6 @@ class NetworkModule {
     @Provides
     fun provideGitRepoApi(retrofit: Retrofit): GithubService =
         retrofit.create(GithubService::class.java)
-
 
 
 }
