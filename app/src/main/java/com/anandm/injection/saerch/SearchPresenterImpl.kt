@@ -1,4 +1,4 @@
-package com.anandm.injection.repolist
+package com.anandm.injection.saerch
 
 import com.anandm.injection.network.GithubManager
 import javax.inject.Inject

@@ -1,8 +1,8 @@
 package com.anandm.injection.di.search
 
 import com.anandm.injection.di.ActivityScoped
-import com.anandm.injection.repolist.SearchContract
-import com.anandm.injection.repolist.SearchActivity
+import com.anandm.injection.saerch.SearchContract
+import com.anandm.injection.saerch.SearchActivity
 import dagger.Binds
 import dagger.Module
 
