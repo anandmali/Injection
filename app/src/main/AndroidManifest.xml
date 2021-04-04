@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Injection">
-        <activity android:name=".repolist.SearchActivity">
+        <activity android:name=".saerch.SearchActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
