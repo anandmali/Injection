@@ -1,4 +1,4 @@
-package com.anandm.injection.saerch
+package com.anandm.injection.search
 
 import android.os.Bundle
 import com.anandm.injection.R
@@ -12,7 +12,6 @@ class SearchActivity : DaggerAppCompatActivity(), SearchContract.View {
 
     @Inject
     lateinit var searchPresenterImpl: SearchPresenterImpl
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

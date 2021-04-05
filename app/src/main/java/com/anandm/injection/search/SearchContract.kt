@@ -1,4 +1,4 @@
-package com.anandm.injection.saerch
+package com.anandm.injection.search
 
 import com.anandm.injection.mvp.BasePresenter
 import com.anandm.injection.mvp.BaseView

@@ -1,4 +1,4 @@
-package com.anandm.injection.saerch
+package com.anandm.injection.search
 
 import com.anandm.injection.network.GithubManager
 import javax.inject.Inject
@@ -10,7 +10,7 @@ class SearchPresenterImpl
 ) : SearchContract.Presenter {
 
     fun fetchValue() {
-        val value = githubManager.someThing()
+        val value = githubManager.searchRepositories()
         view?.showMessage(value)
     }
 }

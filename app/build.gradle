@@ -58,11 +58,11 @@ dependencies {
 
 
     // Retrofit Libraries with OkHttp Profiler
-    implementation 'com.squareup.okhttp3:logging-interceptor:4.2.1'
-    implementation 'com.squareup.retrofit2:converter-scalars:2.6.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.7.1'
     implementation 'com.itkacher.okhttpprofiler:okhttpprofiler:1.0.7'
 
-    implementation 'com.squareup.retrofit2:retrofit:2.6.2'
-    implementation 'com.squareup.retrofit2:converter-gson:2.6.2'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 
 }
