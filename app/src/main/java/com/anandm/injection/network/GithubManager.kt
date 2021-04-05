@@ -5,6 +5,13 @@ import javax.inject.Inject
 
 @ActivityScoped
 class GithubManager
-@Inject constructor() {
-    fun someThing() = "Service returned"
+@Inject constructor(
+    private val githubService: GithubService,
+) {
+
+    fun searchRepositories(): String {
+        return "Some value from service"
+//        return githubService.getRepositories("android").body().toString()
+    }
+
 }

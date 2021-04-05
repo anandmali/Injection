@@ -1,7 +1,6 @@
 package com.anandm.injection.di
 
 import com.anandm.injection.BuildConfig
-import com.anandm.injection.network.GithubService
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient
@@ -37,11 +36,5 @@ class NetworkModule {
         .baseUrl(getBaseUrl())
         .client(okHttpClient)
         .build()
-
-    @Singleton
-    @Provides
-    fun provideGitRepoApi(retrofit: Retrofit): GithubService =
-        retrofit.create(GithubService::class.java)
-
 
 }
