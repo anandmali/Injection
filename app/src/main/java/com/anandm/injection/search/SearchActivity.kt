@@ -23,4 +23,9 @@ class SearchActivity : DaggerAppCompatActivity(), SearchContract.View {
     override fun showMessage(message: String) {
         textView.text = message
     }
+
+    override fun onDestroy() {
+        searchPresenterImpl.onDestroy()
+        super.onDestroy()
+    }
 }
