@@ -1,6 +1,8 @@
 package com.anandm.injection.network
 
 import com.anandm.injection.di.ActivityScoped
+import com.anandm.injection.network.model.SearchModel
+import io.reactivex.Flowable
 import javax.inject.Inject
 
 @ActivityScoped
@@ -9,9 +11,8 @@ class GithubManager
     private val githubService: GithubService,
 ) {
 
-    fun searchRepositories(): String {
-        return "Some value from service"
-//        return githubService.getRepositories("android").body().toString()
+    fun searchRepositories(): Flowable<SearchModel> {
+        return githubService.getRepositories("android")
     }
 
 }
