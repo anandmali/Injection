@@ -25,12 +25,10 @@ class SearchPresenterImpl
             .subscribe(this::handleResponse, this::handlerError)
 
         compositeDisposable.add(disposable)
-
-        view?.showMessage("Some value")
     }
 
     private fun handleResponse(model: SearchModel) {
-        Log.e("handleResponse ", model.toString())
+        view?.updateList(model.items)
     }
 
     private fun handlerError(error: Throwable) {
