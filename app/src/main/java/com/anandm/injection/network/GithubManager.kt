@@ -1,15 +1,16 @@
 package com.anandm.injection.network
 
-import com.anandm.injection.di.ActivityScoped
 import com.anandm.injection.network.model.SearchModel
 import io.reactivex.Flowable
-import javax.inject.Inject
+import retrofit2.Retrofit
 
-@ActivityScoped
-class GithubManager
-@Inject constructor(
-    private val githubService: GithubService,
+class GithubManager(
+    private val retrofit: Retrofit,
 ) {
+
+    private val githubService: GithubService by lazy {
+        retrofit.create(GithubService::class.java)
+    }
 
     fun searchRepositories(): Flowable<SearchModel> {
         return githubService.getRepositories("android")
