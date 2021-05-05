@@ -1,13 +1,13 @@
 package com.anandm.injection
 
-import com.anandm.injection.di.DaggerAppComponent
-import dagger.android.AndroidInjector
-import dagger.android.support.DaggerApplication
+import android.app.Application
+import com.anandm.injection.di.ApplicationResolver
 
-class BaseApplication : DaggerApplication() {
+class BaseApplication : Application() {
 
-    override fun applicationInjector(): AndroidInjector<out DaggerApplication> {
-        return DaggerAppComponent.builder().application(this).build()
+    override fun onCreate() {
+        super.onCreate()
+        ApplicationResolver.initializeApp(this)
     }
 
 }

@@ -1,20 +1,19 @@
 package com.anandm.injection.search
 
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.anandm.injection.R
 import com.anandm.injection.databinding.ActivitySearchBinding
-import com.anandm.injection.di.ActivityScoped
+import com.anandm.injection.di.Injector
 import com.anandm.injection.network.model.RepoModel
-import dagger.android.support.DaggerAppCompatActivity
-import javax.inject.Inject
 
-@ActivityScoped
-class SearchActivity : DaggerAppCompatActivity(), SearchContract.View {
+class SearchActivity : AppCompatActivity(), SearchContract.View {
 
-    @Inject
-    lateinit var searchPresenterImpl: SearchPresenterImpl
+    private val searchPresenterImpl: SearchPresenterImpl by lazy {
+        Injector.searchPresenter(this)
+    }
 
     private var binding: ActivitySearchBinding? = null
 

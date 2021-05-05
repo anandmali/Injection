@@ -7,10 +7,8 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
-import javax.inject.Inject
 
-class SearchPresenterImpl
-@Inject constructor(
+class SearchPresenterImpl(
     private var view: SearchContract.View?,
     private var githubManager: GithubManager,
 ) : SearchContract.Presenter {
