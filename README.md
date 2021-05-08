@@ -1,6 +1,6 @@
 # Injection
 
-`A smple demonstrating dependency injection using Dagger 2`
+`A smple demonstrating dependency injection using manual injection, Dagger 2 (with both mvp and mvvm)`
 
 ## Built with 🛠
 
