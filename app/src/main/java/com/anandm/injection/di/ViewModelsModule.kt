@@ -1,9 +1,8 @@
-package com.anandmali.commits.di
+package com.anandm.injection.di
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.anandmali.commits.ui.main.DetailsViewModel
-import com.anandmali.commits.ui.main.RepoListViewModel
+import com.anandm.injection.search.SearchViewModel
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
@@ -13,13 +12,8 @@ abstract class ViewModelsModule {
 
     @Binds
     @IntoMap
-    @ViewModelKey(RepoListViewModel::class)
-    abstract fun bindRepoListViewModel(repoListViewModel: RepoListViewModel): ViewModel
-
-    @Binds
-    @IntoMap
-    @ViewModelKey(DetailsViewModel::class)
-    abstract fun bindDetailsViewModel(detailsViewModel: DetailsViewModel): ViewModel
+    @ViewModelKey(SearchViewModel::class)
+    abstract fun bindSearchViewModel(searchViewModel: SearchViewModel): ViewModel
 
     @Binds
     abstract fun bindAppViewModelFactory(factory: AppViewModelFactory): ViewModelProvider.Factory

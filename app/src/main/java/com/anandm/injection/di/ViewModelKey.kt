@@ -1,4 +1,4 @@
-package com.anandmali.commits.di
+package com.anandm.injection.di
 
 import androidx.lifecycle.ViewModel
 import dagger.MapKey
