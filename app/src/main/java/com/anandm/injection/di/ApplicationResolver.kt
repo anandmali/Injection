@@ -1,10 +1,6 @@
 package com.anandm.injection.di
 
 import com.anandm.injection.BaseApplication
-import com.anandm.injection.network.GithubManager
-import com.anandm.injection.search.SearchContract
-import com.anandm.injection.search.SearchPresenterImpl
-import retrofit2.Retrofit
 
 object ApplicationResolver {
 
@@ -18,10 +14,5 @@ object ApplicationResolver {
     fun initializeApp(application: BaseApplication) {
         baseApplication = application
     }
-
-    fun provideSearchPresenter(view: SearchContract.View, githubManager: GithubManager) =
-        SearchPresenterImpl(view, githubManager)
-
-    fun provideGithubManager(retrofit: Retrofit) = GithubManager(retrofit)
 
 }

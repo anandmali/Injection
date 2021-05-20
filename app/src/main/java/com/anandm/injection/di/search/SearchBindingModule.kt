@@ -10,7 +10,7 @@ import dagger.android.ContributesAndroidInjector
 abstract class SearchBindingModule {
 
     @ActivityScoped
-    @ContributesAndroidInjector(modules = [SearchModule::class, ViewModelsModule::class])
+    @ContributesAndroidInjector(modules = [ViewModelsModule::class])
     abstract fun contributeSearchActivity(): SearchActivity
 
 }
