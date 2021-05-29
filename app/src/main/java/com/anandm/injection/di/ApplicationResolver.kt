@@ -1,6 +1,9 @@
 package com.anandm.injection.di
 
 import com.anandm.injection.BaseApplication
+import com.anandm.injection.search.SearchContract
+import com.anandm.injection.search.SearchPresenterImpl
+import retrofit2.Retrofit
 
 object ApplicationResolver {
 
