@@ -1,4 +1,4 @@
-package com.anandm.injection.di
+package com.anandm.dagger_mvvm.di
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

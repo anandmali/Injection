@@ -1,4 +1,4 @@
-package com.anandm.injection.network.model
+package com.anandm.dagger_mvvm.network.model
 
 data class SearchModel(
     var total_count: Int = 0,

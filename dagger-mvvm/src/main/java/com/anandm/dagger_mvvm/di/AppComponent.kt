@@ -1,8 +1,8 @@
-package com.anandm.injection.di
+package com.anandm.dagger_mvvm.di
 
 import android.app.Application
-import com.anandm.injection.BaseApplication
-import com.anandm.injection.di.search.ContributeSearchModule
+import com.anandm.dagger_mvvm.BaseApplication
+import com.anandm.dagger_mvvm.di.search.ContributeSearchModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector

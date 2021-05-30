@@ -1,4 +1,4 @@
-package com.anandm.injection.di.search
+package com.anandm.dagger_mvvm.di.search
 
 import dagger.Module
 

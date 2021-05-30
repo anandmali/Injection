@@ -1,16 +1,16 @@
-package com.anandm.injection.search
+package com.anandm.dagger_mvvm.search
 
 import android.os.Bundle
 import android.util.Log
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.anandm.injection.R
-import com.anandm.injection.databinding.ActivitySearchBinding
-import com.anandm.injection.di.ActivityScoped
-import com.anandm.injection.di.AppViewModelFactory
-import com.anandm.injection.network.Status
-import com.anandm.injection.network.model.RepoModel
+import com.anandm.dagger_mvvm.R
+import com.anandm.dagger_mvvm.databinding.ActivitySearchBinding
+import com.anandm.dagger_mvvm.di.ActivityScoped
+import com.anandm.dagger_mvvm.di.AppViewModelFactory
+import com.anandm.dagger_mvvm.network.Status
+import com.anandm.dagger_mvvm.network.model.RepoModel
 import dagger.android.support.DaggerAppCompatActivity
 import javax.inject.Inject
 

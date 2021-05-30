@@ -1,4 +1,4 @@
-package com.anandm.injection
+package com.anandm.dagger_mvvm
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

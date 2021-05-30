@@ -1,4 +1,4 @@
-package com.anandm.injection
+package com.anandm.dagger_mvvm
 
 import org.junit.Test
 

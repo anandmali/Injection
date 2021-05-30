@@ -1,6 +1,6 @@
-package com.anandm.injection.network
+package com.anandm.dagger_mvvm.network
 
-import com.anandm.injection.network.model.SearchModel
+import com.anandm.dagger_mvvm.network.model.SearchModel
 import javax.inject.Inject
 
 class SearchRepository

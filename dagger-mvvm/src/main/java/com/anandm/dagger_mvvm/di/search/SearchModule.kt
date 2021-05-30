@@ -1,7 +1,7 @@
-package com.anandm.injection.di.search
+package com.anandm.dagger_mvvm.di.search
 
-import com.anandm.injection.di.ActivityScoped
-import com.anandm.injection.network.GithubService
+import com.anandm.dagger_mvvm.di.ActivityScoped
+import com.anandm.dagger_mvvm.network.GithubService
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit

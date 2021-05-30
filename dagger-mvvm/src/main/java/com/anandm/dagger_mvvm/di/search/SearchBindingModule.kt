@@ -1,8 +1,8 @@
-package com.anandm.injection.di.search
+package com.anandm.dagger_mvvm.di.search
 
-import com.anandm.injection.di.ActivityScoped
-import com.anandm.injection.di.ViewModelsModule
-import com.anandm.injection.search.SearchActivity
+import com.anandm.dagger_mvvm.di.ActivityScoped
+import com.anandm.dagger_mvvm.di.ViewModelsModule
+import com.anandm.dagger_mvvm.search.SearchActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

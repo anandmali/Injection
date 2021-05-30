@@ -1,6 +1,6 @@
-package com.anandm.injection
+package com.anandm.dagger_mvvm
 
-import com.anandm.injection.di.DaggerAppComponent
+import com.anandm.dagger_mvvm.di.DaggerAppComponent
 import dagger.android.AndroidInjector
 import dagger.android.support.DaggerApplication
 

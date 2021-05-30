@@ -1,7 +1,7 @@
-package com.anandm.injection.di
+package com.anandm.dagger_mvvm.di
 
-import com.anandm.injection.BuildConfig
-import com.anandm.injection.network.GithubService
+import com.anandm.dagger_mvvm.BuildConfig
+import com.anandm.dagger_mvvm.network.GithubService
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import dagger.Module
 import dagger.Provides

@@ -1,10 +1,10 @@
-package com.anandm.injection.search
+package com.anandm.dagger_mvvm.search
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.anandm.injection.databinding.RepoListItemBinding
-import com.anandm.injection.network.model.RepoModel
+import com.anandm.dagger_mvvm.databinding.RepoListItemBinding
+import com.anandm.dagger_mvvm.network.model.RepoModel
 
 class RepoListAdapter(private val repoList: List<RepoModel>) :
     RecyclerView.Adapter<RepoListAdapter.ViewHolder>() {

@@ -1,4 +1,4 @@
-package com.anandm.injection.network.model
+package com.anandm.dagger_mvvm.network.model
 
 sealed class Status<out R> {
 

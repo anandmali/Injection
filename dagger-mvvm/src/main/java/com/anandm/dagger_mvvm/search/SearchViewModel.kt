@@ -1,10 +1,10 @@
-package com.anandm.injection.search
+package com.anandm.dagger_mvvm.search
 
 import androidx.lifecycle.ViewModel
-import com.anandm.injection.network.MutableStatus
-import com.anandm.injection.network.SearchRepository
-import com.anandm.injection.network.model.RepoModel
-import com.anandm.injection.network.model.SearchModel
+import com.anandm.dagger_mvvm.network.MutableStatus
+import com.anandm.dagger_mvvm.network.SearchRepository
+import com.anandm.dagger_mvvm.network.model.RepoModel
+import com.anandm.dagger_mvvm.network.model.SearchModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job

@@ -1,8 +1,8 @@
-package com.anandm.injection.di
+package com.anandm.dagger_mvvm.di
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.anandm.injection.search.SearchViewModel
+import com.anandm.dagger_mvvm.search.SearchViewModel
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
