@@ -10,7 +10,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.anandm.injection"
+        applicationId "com.anandm.injection.dagger_mvvm"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
