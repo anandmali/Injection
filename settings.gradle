@@ -1,3 +1,4 @@
 include ':dagger-mvvm'
 rootProject.name = "Injection"
 include ':dagger-mvp'
+include ':manual-injection'
