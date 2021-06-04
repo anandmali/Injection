@@ -1,6 +1,7 @@
 package com.anandmali.hilt_mvvm.di
 
 import com.anandmali.hilt_mvvm.BuildConfig
+import com.anandmali.hilt_mvvm.network.GithubService
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import dagger.Module
 import dagger.Provides
@@ -41,4 +42,9 @@ object NetworkModule {
         .baseUrl(getBaseUrl())
         .client(okHttpClient)
         .build()
+
+    @Provides
+    fun provideApiService(retrofit: Retrofit): GithubService {
+        return retrofit.create(GithubService::class.java)
+    }
 }
