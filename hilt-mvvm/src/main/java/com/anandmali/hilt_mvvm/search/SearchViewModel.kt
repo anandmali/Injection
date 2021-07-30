@@ -1,7 +1,5 @@
 package com.anandmali.hilt_mvvm.search
 
-import androidx.hilt.Assisted
-import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.ViewModel
 import com.anandmali.hilt_mvvm.network.MutableStatus
 import com.anandmali.hilt_mvvm.network.SearchRepository
