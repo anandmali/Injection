@@ -1,5 +1,4 @@
-include ':dagger-mvvm'
 rootProject.name = "Injection"
-include ':dagger-mvp'
+include ':dagger'
 include ':manual-injection'
-include ':hilt-mvvm'
+include ':hilt'
