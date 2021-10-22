@@ -2,3 +2,4 @@ rootProject.name = "Injection"
 include ':dagger'
 include ':manual-injection'
 include ':hilt'
+include ':koin'
